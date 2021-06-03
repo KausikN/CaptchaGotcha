@@ -1,0 +1,10 @@
+{
+    "PROJECT_NAME": "CaptchaGotcha",
+    "PROJECT_LINK": "https://github.com/KausikN/CaptchaGotcha",
+
+    "PROJECT_DESC": "Captcha generation and breaking tools in python",
+
+    "PROJECT_README": "README.md",
+
+    "PROJECT_MODES": ["Generate Image Captcha", "Generate Audio Captcha"]
+}

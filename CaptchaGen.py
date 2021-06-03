@@ -13,14 +13,14 @@ from Utils import Utils
 
 # Main Functions
 # Generate Functions
-def GenerateAudioCaptcha(text='1234', out_path='audioCAPTCHA.wav', voicedir='Data/Voices/'):
+def GenerateAudioCaptcha(text='1234', out_path='audioCAPTCHA.wav', voicedir=None):
     audio = AudioCaptcha(voicedir=voicedir)
-    data = audio.generate(text)
+    # data = audio.generate(text)
     audio.write(text, out_path)
 
 def GenerateImageCaptcha(text='1234', out_path='imageCAPTCHA.png', font_paths=['Data/Fonts/Calibri.ttf', 'Data/Fonts/Sans.ttf']):
     image = ImageCaptcha(fonts=font_paths)
-    data = image.generate(text)
+    # data = image.generate(text)
     image.write(text, out_path)
 
 # # Driver Code
