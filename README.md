@@ -3,6 +3,16 @@
  
  Hosted at [https://infinityjoker-captcha-gotcha.herokuapp.com/](https://infinityjoker-captcha-gotcha.herokuapp.com/)
 
+# GUI
+ - Install streamlit using
+   ```
+   pip install streamlit
+   ```
+ - Launch Streamlit GUI in the repo folder by
+   ```
+   streamlit run app.py
+   ```
+
 # Captcha Generation
 
 - Generate captchas
