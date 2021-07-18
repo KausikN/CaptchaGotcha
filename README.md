@@ -2,14 +2,9 @@
  Captcha generation and breaking tools in python
 
 # GUI
- - Install streamlit using
-   ```
-   pip install streamlit
-   ```
- - Launch Streamlit GUI in the repo folder by
-   ```
-   streamlit run app.py
-   ```
+
+ - GUI Hosted using streamlit
+ - Run [StartUI.sh](StartUI.sh) to view the app on your browser!
 
 # Captcha Generation
 
