@@ -18,10 +18,8 @@
 
 # Captcha Generation
 
-- Generate captchas
+- Generate image captchas
 
     ![Example](DocImages/Example.png)
 
-- Easier generation using UI
-
-    ![CaptchaGenUI](DocImages/CaptchaGenUI.png)
+- Generate audio captchas
