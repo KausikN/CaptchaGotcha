@@ -6,7 +6,7 @@ Stream lit GUI for hosting CaptchaGotcha
 import streamlit as st
 import json
 
-import CaptchaGen
+from CaptchaGen import *
 
 # Main Vars
 config = json.load(open('./StreamLitGUI/UIConfig.json', 'r'))
@@ -39,12 +39,12 @@ def HomePage():
 
 #############################################################################################################################
 # Repo Based Vars
-SAVEPATH_DEFAULT_IMAGE = 'captcha.png'
-SAVEPATH_DEFAULT_AUDIO = 'captcha.wav'
-FONTS_PATH = 'Data/Fonts/'
-VOICES_PATH = 'Data/Voices/'
+SAVEPATH_DEFAULT_IMAGE = "GeneratedVisualisations/captcha.png"
+SAVEPATH_DEFAULT_AUDIO = "GeneratedVisualisations/captcha.wav"
+FONTS_PATH = "Data/Fonts/"
+VOICES_PATH = "Data/Voices/"
 
-FONT_NAMES = CaptchaGen.Utils.GetFileNames(CaptchaGen.Utils.FindFiles(FONTS_PATH))
+FONT_NAMES = GetFileNames(FindFiles(FONTS_PATH))
 
 # Util Functions
 
@@ -64,7 +64,7 @@ def generate_image_captcha():
     font_paths = []
     for f in USERINPUT_fonts:
         font_paths.append(FONTS_PATH + f + ".ttf")
-    CaptchaGen.GenerateImageCaptcha(text=USERINPUT_text, out_path=SAVEPATH_DEFAULT_IMAGE, font_paths=font_paths)
+    GenerateImageCaptcha(text=USERINPUT_text, out_path=SAVEPATH_DEFAULT_IMAGE, font_paths=font_paths)
 
     # Display Outputs
     st.markdown("Generated Image Captcha")
@@ -80,7 +80,7 @@ def generate_audio_captcha():
     # Process Inputs
     if st.button("Regenerate"):
         pass
-    CaptchaGen.GenerateAudioCaptcha(text=USERINPUT_text, out_path=SAVEPATH_DEFAULT_AUDIO)#, voicedir=VOICES_PATH)
+    GenerateAudioCaptcha(text=USERINPUT_text, out_path=SAVEPATH_DEFAULT_AUDIO)#, voicedir=VOICES_PATH)
 
     # Display Outputs
     st.markdown("Generated Audio Captcha")

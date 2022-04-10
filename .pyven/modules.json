@@ -12,7 +12,7 @@
             "dependencies": [
                 "streamlit.py",
                 "json.py",
-                "CaptchaGen.py"
+                "*.py"
             ]
         },
         "CaptchaCrack.py": {
@@ -23,7 +23,7 @@
             "subDir": "",
             "dependencies": [
                 "captcha_solver.py",
-                "captcha_solver.py"
+                "CaptchaSolver.py"
             ]
         },
         "CaptchaGen.py": {
@@ -35,77 +35,10 @@
             "dependencies": [
                 "os.py",
                 "captcha.py",
-                "captcha/audio.py",
-                "captcha/image.py",
+                "AudioCaptcha.py",
+                "ImageCaptcha.py",
                 "tqdm.py",
-                "Utils/Utils.py"
-            ]
-        },
-        "CaptchaGenUI.py": {
-            "name": "CaptchaGenUI",
-            "type": "local",
-            "link": "https://github.com/KausikN/CaptchaGotcha/blob/master/CaptchaGenUI.py",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": [
-                "UIUtils/Py2UI.py"
-            ]
-        },
-        "UIUtils/Py2UI.py": {
-            "name": "Py2UI",
-            "type": "local",
-            "link": "https://github.com/KausikN/CaptchaGotcha/blob/master/UIUtils/Py2UI.py",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "UIUtils",
-            "dependencies": [
-                "os.py",
-                "json.py",
-                "pickle.py",
-                "functools.py",
-                "UIUtils/PythonCodeTokenizer.py",
-                "UIUtils/UIGen_TKinter.py"
-            ]
-        },
-        "UIUtils/PythonCodeTokenizer.py": {
-            "name": "PythonCodeTokenizer",
-            "type": "local",
-            "link": "https://github.com/KausikN/CaptchaGotcha/blob/master/UIUtils/PythonCodeTokenizer.py",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "UIUtils",
-            "dependencies": [
-                "re.py",
-                "json.py"
-            ]
-        },
-        "UIUtils/UIGen_TKinter.py": {
-            "name": "UIGen_TKinter",
-            "type": "local",
-            "link": "https://github.com/KausikN/CaptchaGotcha/blob/master/UIUtils/UIGen_TKinter.py",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "UIUtils",
-            "dependencies": [
-                "os.py",
-                "json.py",
-                "tkinter.py",
-                "tkinter.py",
-                "PIL.py",
-                "tkinter.py",
-                "functools.py",
-                "UIUtils/Utils.py",
-                "UIUtils/PythonCodeTokenizer.py"
-            ]
-        },
-        "UIUtils/Utils.py": {
-            "name": "Utils",
-            "type": "local",
-            "link": "https://github.com/KausikN/CaptchaGotcha/blob/master/UIUtils/Utils.py",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "UIUtils",
-            "dependencies": [
-                "sys.py",
-                "io.py",
-                "tkinter.py",
-                "tkinter.py"
+                "*.py"
             ]
         },
         "Utils/Utils.py": {
@@ -118,123 +51,83 @@
                 "os.py"
             ]
         },
-        "os.py": {
-            "name": "os",
-            "type": "inbuilt",
+        "json.py": {
+            "name": "json",
+            "type": "missing",
             "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": []
-        },
-        "captcha/image.py": {
-            "name": "image",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "captcha",
-            "dependencies": []
-        },
-        "tkinter.py": {
-            "name": "tkinter",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": []
-        },
-        "PIL.py": {
-            "name": "PIL",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": []
-        },
-        "functools.py": {
-            "name": "functools",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": []
-        },
-        "sys.py": {
-            "name": "sys",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": []
-        },
-        "streamlit.py": {
-            "name": "streamlit",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": []
-        },
-        "captcha_solver.py": {
-            "name": "captcha_solver",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": []
-        },
-        "io.py": {
-            "name": "io",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
+            "parentDir": "",
             "subDir": "",
             "dependencies": []
         },
         "tqdm.py": {
             "name": "tqdm",
-            "type": "inbuilt",
+            "type": "missing",
             "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
+            "parentDir": "",
+            "subDir": "",
+            "dependencies": []
+        },
+        "AudioCaptcha.py": {
+            "name": "AudioCaptcha",
+            "type": "missing",
+            "link": "",
+            "parentDir": "",
+            "subDir": "",
+            "dependencies": []
+        },
+        "captcha_solver.py": {
+            "name": "captcha_solver",
+            "type": "missing",
+            "link": "",
+            "parentDir": "",
+            "subDir": "",
+            "dependencies": []
+        },
+        "streamlit.py": {
+            "name": "streamlit",
+            "type": "missing",
+            "link": "",
+            "parentDir": "",
+            "subDir": "",
+            "dependencies": []
+        },
+        "*.py": {
+            "name": "*",
+            "type": "missing",
+            "link": "",
+            "parentDir": "",
+            "subDir": "",
+            "dependencies": []
+        },
+        "os.py": {
+            "name": "os",
+            "type": "missing",
+            "link": "",
+            "parentDir": "",
+            "subDir": "",
+            "dependencies": []
+        },
+        "ImageCaptcha.py": {
+            "name": "ImageCaptcha",
+            "type": "missing",
+            "link": "",
+            "parentDir": "",
+            "subDir": "",
+            "dependencies": []
+        },
+        "CaptchaSolver.py": {
+            "name": "CaptchaSolver",
+            "type": "missing",
+            "link": "",
+            "parentDir": "",
             "subDir": "",
             "dependencies": []
         },
         "captcha.py": {
             "name": "captcha",
-            "type": "inbuilt",
+            "type": "missing",
             "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": []
-        },
-        "json.py": {
-            "name": "json",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": []
-        },
-        "captcha/audio.py": {
-            "name": "audio",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "captcha",
-            "dependencies": []
-        },
-        "pickle.py": {
-            "name": "pickle",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
-            "subDir": "",
-            "dependencies": []
-        },
-        "re.py": {
-            "name": "re",
-            "type": "inbuilt",
-            "link": "",
-            "parentDir": "E:/Github Codes and Projects/Projects/CaptchaGotcha",
+            "parentDir": "",
             "subDir": "",
             "dependencies": []
         }

@@ -1,4 +1,4 @@
-streamlit
-requests
-captcha
-tqdm
+captcha_solver==0.1.5
+django_recaptcha==3.0.0
+streamlit==1.8.0
+tqdm==4.62.3

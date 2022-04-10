@@ -20,6 +20,6 @@
 
 - Generate image captchas
 
-    ![Example](DocImages/Example.png)
+    ![Example](GeneratedVisualisations/Example.png)
 
 - Generate audio captchas

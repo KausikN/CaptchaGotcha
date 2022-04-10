@@ -28,7 +28,10 @@ def Crack_AntigateCaptcha(api_key, img_path='captcha.png'):
     print(solver.solve_captcha(raw_data))
 
 # Driver Code
-path = 'Examples/Captcha_1.jpg'
-api_key = ''
+# # Params
+# path = "Examples/Captcha_1.jpg"
+# api_key = ""
+# # Params
 
-Crack_BrowserCaptcha(img_path=path)
+# # RunCode
+# Crack_BrowserCaptcha(img_path=path)
